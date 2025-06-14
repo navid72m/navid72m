@@ -1,8 +1,20 @@
 # 👋 Hi, I'm Navid! 
 
+<p align="right">
+<img src="https://komarev.com/ghpvc/?username=navid72m&style=flat-square&color=blue" alt="Profile views" />
+<img src="https://img.shields.io/github/followers/navid72m?style=flat-square&color=green" alt="GitHub followers" />
+</p>
+
 ## 🧠 Technical Translator | Healthcare AI Specialist | Systems Optimizer
 
 > *Bridging complex AI/ML concepts with real-world applications in regulated environments*
+
+<p align="center">
+<a href="https://linkedin.com/in/navid-mirnouri"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:navid72m@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="https://medium.com/@navid72m"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" /></a>
+<a href="https://github.com/navid72m"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
+</p>
 
 ---
 
@@ -55,14 +67,24 @@
 <td width="50%">
 
 **🧠 [society-as-a-network](https://github.com/navid72m/society-as-a-network)**
-*Modeling societal systems as neural networks*
+> *Modeling societal systems as neural networks*
+
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Deep Learning](https://img.shields.io/badge/-Deep%20Learning-FF6F00?style=flat-square)
+![Policy Optimization](https://img.shields.io/badge/-Policy%20Optimization-green?style=flat-square)
+
 - Deep Learning + Reinforcement Learning for social simulation
 - Focus: Balancing fairness, efficiency, and meritocracy
-- Keywords: Policy Optimization, Ethics in AI
+- Keywords: Social Simulation, Ethics in AI
 - 📄 Paper draft available on request
 
 **⚡ [llm-embedded](https://github.com/navid72m/llm-embedded)**
-*LLMs on edge hardware (Jetson Orin Nano)*
+> *LLMs on edge hardware (Jetson Orin Nano)*
+
+![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![Edge Computing](https://img.shields.io/badge/-Edge%20Computing-blue?style=flat-square)
+![Model Compression](https://img.shields.io/badge/-Model%20Compression-orange?style=flat-square)
+
 - Model quantization, compression & distillation
 - Hardware-aware design for real-world deployment
 - Focus: Efficient inference, low-latency systems
@@ -71,13 +93,23 @@
 <td width="50%">
 
 **📊 [time-series-lab](https://github.com/navid72m/time-series-lab)**
-*End-to-end time series analysis framework*
+> *End-to-end time series analysis framework*
+
+![Prophet](https://img.shields.io/badge/-Prophet-4285F4?style=flat-square)
+![LSTM](https://img.shields.io/badge/-LSTM-FF6F00?style=flat-square)
+![ARIMA](https://img.shields.io/badge/-ARIMA-green?style=flat-square)
+
 - Statistical + Deep Learning approaches
-- Tools: Prophet, ARIMA, LSTM
 - Production-ready visualization pipelines
+- Tools: Prophet, ARIMA, LSTM
 
 **🎯 [rlhf-lab](https://github.com/navid72m/rlhf-lab)**
-*Human feedback → Better AI behavior*
+> *Human feedback → Better AI behavior*
+
+![RLHF](https://img.shields.io/badge/-RLHF-purple?style=flat-square)
+![Reward Modeling](https://img.shields.io/badge/-Reward%20Modeling-red?style=flat-square)
+![Policy Optimization](https://img.shields.io/badge/-Policy%20Optimization-green?style=flat-square)
+
 - Reinforcement Learning from Human Feedback
 - Policy optimization experiments
 - Reward model training & evaluation
@@ -102,7 +134,7 @@ class HealthcareAI:
         return "Building AI systems that doctors actually trust and use"
 ```
 
-### 🛠️ Tech Stack & Tools
+### 🛠️ Tech Stack & Expertise
 
 <p align="center">
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
@@ -113,7 +145,19 @@ class HealthcareAI:
 <img src="https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
 <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
 <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+<img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
+<img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" />
 </p>
+
+<div align="center">
+
+| 🤖 **AI/ML** | 🏗️ **Backend** | 🎨 **Frontend** | 🌐 **Languages** |
+|:---:|:---:|:---:|:---:|
+| BERT, GPT, RAG | Python, Docker | TypeScript, React | 🇮🇷 Persian |
+| PyTorch, TensorFlow | Microservices | React Native | 🇺🇸 English |
+| HuggingFace, RLHF | Node.js, Go | Mobile Dev | 🇩🇪 German |
+
+</div>
 
 ---
 
@@ -163,7 +207,7 @@ From your projects and research directions, a fascinating intellectual profile e
 - Academic thesis + Industry experience
 - Theoretical frameworks + Production systems
 - Paper drafts + Working code
-- PhD preparation + Real-world deployment
+- Real-world deployment
 
 </td>
 <td width="50%">
@@ -202,31 +246,51 @@ class NavidApproach:
         return "Technical excellence + Ethical frameworks + Human understanding"
 ```
 
-### 🚀 Current Research Directions
+### 📈 GitHub Analytics & Activity
 
-- 🌍 **Multi-agent LLMs** for emergent behavior analysis
-- 🎲 **Game theory + RL** for fairness and alignment 
-- 🧩 **LLM hallucination detection** with robust evaluation metrics
-- 🧠 **AI + Philosophy + Decision Theory** 
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=navid72m&show_icons=true&theme=transparent&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" />
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=navid72m&theme=transparent&hide_border=true" alt="GitHub Streak" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=navid72m&layout=compact&theme=transparent&hide_border=true&langs_count=8" alt="Top Languages" />
+
+</div>
+
+### 🏆 GitHub Achievements
+
+<div align="center">
+
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=navid72m&theme=transparent&no-frame=true&margin-w=15&margin-h=15&column=4)
+
+</div>
 
 ---
 
-### 💻 Recent Project Highlights
+### 🌟 Let's Connect & Collaborate!
 
-| Project | Impact | Tech Stack |
-|---------|--------|------------|
-| 🧠 Society-as-Network | Social simulation breakthrough | Deep RL + Policy Optimization |
-| ⚡ LLM-Embedded | Edge AI democratization | PyTorch + Model Compression |
-| 📊 Time-Series-Lab | Production-ready forecasting | Prophet + LSTM + ARIMA |
-| 🎯 RLHF-Lab | Better human-AI alignment | RLHF + Reward Modeling |
+<div align="center">
 
-### 🌍 Let's Connect!
+**Open to opportunities in:** *Responsible AI • Healthcare Technology • Research Collaboration *
 
-<p align="center">
-<a href="https://linkedin.com/in/navid-mirnouri"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:navid72m@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-<a href="https://github.com/navid72m"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
+<p>
+<a href="https://linkedin.com/in/navid-mirnouri">
+<img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="mailto:navid72m@gmail.com">
+<img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+<a href="https://medium.com/@navid72m">
+<img src="https://img.shields.io/badge/Medium-Follow-12100E?style=for-the-badge&logo=medium&logoColor=white" />
+</a>
 </p>
+
+<img src="https://img.shields.io/badge/Location-Munich,%20Germany-blue?style=flat-square&logo=googlemaps&logoColor=white" />
+<img src="https://img.shields.io/badge/Status-Open%20to%20Opportunities-brightgreen?style=flat-square" />
+<img src="https://img.shields.io/badge/Timezone-CET%20(UTC+1)-orange?style=flat-square&logo=clockify&logoColor=white" />
+
+</div>
 
 ---
 
@@ -234,6 +298,16 @@ class NavidApproach:
 <i>"The most impactful AI systems are those that understand both the technical complexity and the human context they serve."</i>
 </p>
 
-<p align="center">
+<div align="center">
+
+**Profile Analytics**
+
 <img src="https://komarev.com/ghpvc/?username=navid72m&style=flat-square&color=blue" alt="Profile views" />
-</p>
+<img src="https://img.shields.io/github/followers/navid72m?style=flat-square&color=green&label=Followers" alt="GitHub followers" />
+<img src="https://img.shields.io/github/stars/navid72m?style=flat-square&color=yellow&label=Total%20Stars" alt="GitHub stars" />
+
+---
+
+*⭐ If you find my work interesting, consider starring my repositories!*
+
+</div>
