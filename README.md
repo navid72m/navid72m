@@ -247,273 +247,119 @@ graph TD
 
 **🧠 Explore the connections between my expertise, projects, and research areas**
 
+**[🚀 View Interactive Knowledge Graph →](https://navid72m.github.io/knowledge-graph)**
+
+*Click above to explore my interactive knowledge visualization*
+
 </div>
 
-<details>
-<summary><b>🎯 Click to View Interactive Knowledge Graph</b></summary>
+### 🧠 Knowledge Architecture Overview
 
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
-    <style>
-        .knowledge-graph {
-            width: 100%;
-            height: 600px;
-            border: 2px solid #e2e8f0;
-            border-radius: 12px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        .node-core { fill: #ff6b6b; stroke: #fff; stroke-width: 3px; }
-        .node-tech { fill: #4ecdc4; stroke: #fff; stroke-width: 2px; }
-        .node-domain { fill: #45b7d1; stroke: #fff; stroke-width: 2px; }
-        .node-project { fill: #96ceb4; stroke: #fff; stroke-width: 2px; }
-        .node-skill { fill: #feca57; stroke: #fff; stroke-width: 2px; }
-        .link { stroke: #ffffff; stroke-opacity: 0.6; stroke-width: 2px; }
-        .link-strong { stroke-width: 4px; stroke: #ff6b6b; }
-        .node-text { 
-            font-family: 'Arial', sans-serif; 
-            font-size: 12px; 
-            font-weight: bold;
-            fill: #2c3e50;
-            text-anchor: middle;
-            pointer-events: none;
-        }
-        .legend {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: rgba(255,255,255,0.9);
-            padding: 15px;
-            border-radius: 8px;
-            font-size: 12px;
-        }
-        .legend-item {
-            display: flex;
-            align-items: center;
-            margin: 5px 0;
-        }
-        .legend-color {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            margin-right: 8px;
-            border: 2px solid #fff;
-        }
-    </style>
-</head>
-<body>
-    <div class="knowledge-graph" id="knowledge-graph">
-        <div class="legend">
-            <div class="legend-item">
-                <div class="legend-color" style="background: #ff6b6b;"></div>
-                <span>Core Identity</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background: #4ecdc4;"></div>
-                <span>Technologies</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background: #45b7d1;"></div>
-                <span>Domains</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background: #96ceb4;"></div>
-                <span>Projects</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background: #feca57;"></div>
-                <span>Skills</span>
-            </div>
-        </div>
-    </div>
+<div align="center">
 
-    <script>
-        // Knowledge Graph Data
-        const nodes = [
-            // Core Identity
-            { id: "navid", name: "Navid\nMirnouri", type: "core", size: 25 },
-            
-            // Technologies
-            { id: "python", name: "Python", type: "tech", size: 20 },
-            { id: "pytorch", name: "PyTorch", type: "tech", size: 18 },
-            { id: "bert", name: "BERT", type: "tech", size: 16 },
-            { id: "gpt", name: "GPT", type: "tech", size: 16 },
-            { id: "docker", name: "Docker", type: "tech", size: 15 },
-            { id: "typescript", name: "TypeScript", type: "tech", size: 15 },
-            { id: "react", name: "React\nNative", type: "tech", size: 14 },
-            { id: "golang", name: "Go", type: "tech", size: 14 },
-            { id: "c", name: "C", type: "tech", size: 12 },
-            
-            // Domains
-            { id: "healthcare", name: "Healthcare\nAI", type: "domain", size: 20 },
-            { id: "nlp", name: "Natural\nLanguage\nProcessing", type: "domain", size: 18 },
-            { id: "rlhf", name: "RLHF", type: "domain", size: 16 },
-            { id: "edge-ai", name: "Edge AI", type: "domain", size: 16 },
-            { id: "ethics", name: "AI Ethics", type: "domain", size: 15 },
-            { id: "social-sim", name: "Social\nSimulation", type: "domain", size: 15 },
-            
-            // Projects
-            { id: "society-network", name: "Society as\nNetwork", type: "project", size: 18 },
-            { id: "llm-embedded", name: "LLM\nEmbedded", type: "project", size: 17 },
-            { id: "time-series", name: "Time Series\nLab", type: "project", size: 16 },
-            { id: "rlhf-lab", name: "RLHF\nLab", type: "project", size: 16 },
-            { id: "healthcare-qa", name: "Healthcare\nQA System", type: "project", size: 15 },
-            
-            // Skills
-            { id: "research", name: "Research", type: "skill", size: 16 },
-            { id: "systems", name: "Systems\nThinking", type: "skill", size: 15 },
-            { id: "observability", name: "Observability", type: "skill", size: 14 },
-            { id: "multilingual", name: "Trilingual", type: "skill", size: 13 },
-            { id: "mentoring", name: "Mentoring", type: "skill", size: 12 },
-            { id: "cross-cultural", name: "Cross-Cultural", type: "skill", size: 12 }
-        ];
-
-        const links = [
-            // Core connections
-            { source: "navid", target: "healthcare", strength: "strong" },
-            { source: "navid", target: "nlp", strength: "strong" },
-            { source: "navid", target: "ethics", strength: "strong" },
-            { source: "navid", target: "research", strength: "strong" },
-            
-            // Technology connections
-            { source: "healthcare", target: "bert", strength: "normal" },
-            { source: "healthcare", target: "gpt", strength: "normal" },
-            { source: "healthcare", target: "python", strength: "normal" },
-            { source: "nlp", target: "bert", strength: "strong" },
-            { source: "nlp", target: "gpt", strength: "strong" },
-            { source: "nlp", target: "pytorch", strength: "normal" },
-            
-            // Project connections
-            { source: "society-network", target: "social-sim", strength: "strong" },
-            { source: "society-network", target: "ethics", strength: "strong" },
-            { source: "society-network", target: "python", strength: "normal" },
-            { source: "llm-embedded", target: "edge-ai", strength: "strong" },
-            { source: "llm-embedded", target: "pytorch", strength: "normal" },
-            { source: "time-series", target: "python", strength: "normal" },
-            { source: "rlhf-lab", target: "rlhf", strength: "strong" },
-            { source: "rlhf-lab", target: "ethics", strength: "normal" },
-            { source: "healthcare-qa", target: "healthcare", strength: "strong" },
-            { source: "healthcare-qa", target: "nlp", strength: "strong" },
-            
-            // Skill connections
-            { source: "research", target: "systems", strength: "normal" },
-            { source: "observability", target: "docker", strength: "normal" },
-            { source: "multilingual", target: "cross-cultural", strength: "normal" },
-            { source: "cross-cultural", target: "ethics", strength: "normal" },
-            
-            // Technology interconnections
-            { source: "python", target: "pytorch", strength: "normal" },
-            { source: "typescript", target: "react", strength: "normal" },
-            { source: "docker", target: "observability", strength: "normal" },
-            
-            // Domain connections
-            { source: "healthcare", target: "ethics", strength: "normal" },
-            { source: "edge-ai", target: "pytorch", strength: "normal" },
-            { source: "rlhf", target: "ethics", strength: "strong" }
-        ];
-
-        // Set up the visualization
-        const width = 800;
-        const height = 600;
-        
-        const svg = d3.select("#knowledge-graph")
-            .append("svg")
-            .attr("width", width)
-            .attr("height", height);
-
-        // Create simulation
-        const simulation = d3.forceSimulation(nodes)
-            .force("link", d3.forceLink(links).id(d => d.id).distance(80))
-            .force("charge", d3.forceManyBody().strength(-300))
-            .force("center", d3.forceCenter(width / 2, height / 2))
-            .force("collision", d3.forceCollide().radius(d => d.size + 5));
-
-        // Create links
-        const link = svg.append("g")
-            .selectAll("line")
-            .data(links)
-            .enter().append("line")
-            .attr("class", d => d.strength === "strong" ? "link link-strong" : "link");
-
-        // Create nodes
-        const node = svg.append("g")
-            .selectAll("circle")
-            .data(nodes)
-            .enter().append("circle")
-            .attr("r", d => d.size)
-            .attr("class", d => `node-${d.type}`)
-            .call(d3.drag()
-                .on("start", dragstarted)
-                .on("drag", dragged)
-                .on("end", dragended));
-
-        // Add labels
-        const labels = svg.append("g")
-            .selectAll("text")
-            .data(nodes)
-            .enter().append("text")
-            .attr("class", "node-text")
-            .text(d => d.name)
-            .style("font-size", d => `${Math.max(10, d.size/2)}px`);
-
-        // Add hover effects
-        node.on("mouseover", function(event, d) {
-            d3.select(this).transition().duration(200).attr("r", d.size * 1.3);
-        }).on("mouseout", function(event, d) {
-            d3.select(this).transition().duration(200).attr("r", d.size);
-        });
-
-        // Update positions
-        simulation.on("tick", () => {
-            link
-                .attr("x1", d => d.source.x)
-                .attr("y1", d => d.source.y)
-                .attr("x2", d => d.target.x)
-                .attr("y2", d => d.target.y);
-
-            node
-                .attr("cx", d => d.x)
-                .attr("cy", d => d.y);
-                
-            labels
-                .attr("x", d => d.x)
-                .attr("y", d => d.y + 5);
-        });
-
-        // Drag functions
-        function dragstarted(event, d) {
-            if (!event.active) simulation.alphaTarget(0.3).restart();
-            d.fx = d.x;
-            d.fy = d.y;
-        }
-
-        function dragged(event, d) {
-            d.fx = event.x;
-            d.fy = event.y;
-        }
-
-        function dragended(event, d) {
-            if (!event.active) simulation.alphaTarget(0);
-            d.fx = null;
-            d.fy = null;
-        }
-    </script>
-</body>
-</html>
+```mermaid
+graph TD
+    A["🧠 Navid Mirnouri<br/>AI Researcher & Engineer"] --> B["🏥 Healthcare AI<br/>Regulated Systems"]
+    A --> C["⚡ Edge Computing<br/>Real-time Deployment"]
+    A --> D["⚖️ AI Ethics<br/>Responsible AI"]
+    A --> E["🏗️ Systems Architecture<br/>Production Scale"]
+    
+    B --> F["🤖 LLM Models<br/>BERT • GPT • RAG"]
+    B --> G["📋 Compliance<br/>Medical Regulations"]
+    B --> H["📄 Clinical NLP<br/>Text Processing"]
+    
+    C --> I["📦 Model Compression<br/>Quantization"]
+    C --> J["🔧 Hardware Deploy<br/>Jetson • Edge"]
+    C --> K["⚡ Real-time<br/>Low Latency"]
+    
+    D --> L["🎯 RLHF<br/>Human Feedback"]
+    D --> M["🌐 Social Simulation<br/>Society Networks"]
+    D --> N["⚖️ Algorithmic Fairness<br/>Bias Mitigation"]
+    
+    E --> O["🔗 Microservices<br/>Distributed Systems"]
+    E --> P["👁️ Observability<br/>Monitoring"]
+    E --> Q["📦 Containerization<br/>Docker • K8s"]
+    
+    F --> R["🕸️ society-as-network<br/>Social AI Research"]
+    I --> S["💻 llm-embedded<br/>Edge AI Platform"]
+    L --> T["🔬 rlhf-lab<br/>Alignment Research"]
+    H --> U["❓ Healthcare QA<br/>Medical Assistant"]
+    
+    %% Styling
+    classDef core fill:#ff6b6b,stroke:#fff,stroke-width:3px,color:#fff
+    classDef domain fill:#4ecdc4,stroke:#fff,stroke-width:2px,color:#fff
+    classDef tech fill:#45b7d1,stroke:#fff,stroke-width:2px,color:#fff
+    classDef project fill:#96ceb4,stroke:#fff,stroke-width:2px,color:#fff
+    classDef skill fill:#feca57,stroke:#fff,stroke-width:2px,color:#000
+    
+    class A core
+    class B,C,D,E domain
+    class F,G,H,I,J,K,L,M,N,O,P,Q tech
+    class R,S,T,U project
 ```
 
-**🎮 Interactive Features:**
-- **Drag nodes** to explore relationships
-- **Hover effects** for better visibility  
-- **Color coding** by expertise type
-- **Connection strength** visualization
-- **Responsive design** for different screens
+</div>
 
-</details>
+### 🎯 Knowledge Intersection Analysis
+
+<table>
+<tr>
+<td width="50%">
+
+**🔥 High-Impact Combinations**
+```
+Healthcare × AI Ethics × Edge Computing
+├── Regulatory-compliant AI systems
+├── Privacy-preserving medical AI
+├── Real-time clinical decision support
+└── Trustworthy edge deployment
+
+Gaming × Healthcare × AI
+├── Engagement-driven health apps
+├── Gamified therapy systems  
+├── Interactive medical training
+└── Patient behavior modeling
+```
+
+**🌍 Cross-Cultural × Technical**
+```
+Persian × English × German × AI
+├── Multilingual NLP systems
+├── Cross-cultural AI ethics
+├── International collaboration
+└── Global healthcare solutions
+```
+
+</td>
+<td width="50%">
+
+**🧠 Research × Industry Bridge**
+```
+Academic Research + Production Systems
+├── Peer-reviewed publications
+├── Scalable implementations
+├── Real-world validation
+└── Industry-ready solutions
+
+Theory → Practice Pipeline
+├── Mathematical foundations
+├── Algorithm development
+├── System architecture
+└── Production deployment
+```
+
+**⚡ Technology Stack Synergies**
+```
+Low-level (C) + High-level (Python)
+├── Performance optimization
+├── System-level understanding
+├── Full-stack AI development
+└── Hardware-software co-design
+```
+
+</td>
+</tr>
+</table>
 
 ### 📈 GitHub Analytics & Activity
 
