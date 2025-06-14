@@ -206,46 +206,6 @@ class HealthcareAI:
 
 ---
 
-### 🧠 Knowledge Architecture Overview
-
-<div align="center">
-
-```mermaid
-graph TD
-    A[Navid Mirnouri<br/>🧠 AI Researcher] --> B[Healthcare AI<br/>🏥]
-    A --> C[Edge Computing<br/>⚡]
-    A --> D[AI Ethics<br/>⚖️]
-    A --> E[Systems Architecture<br/>🏗️]
-    
-    B --> F[BERT/GPT Models<br/>🤖]
-    B --> G[Regulatory Compliance<br/>📋]
-    B --> H[Clinical NLP<br/>📄]
-    
-    C --> I[Model Compression<br/>📦]
-    C --> J[Jetson Deployment<br/>🔧]
-    C --> K[Real-time Inference<br/>⚡]
-    
-    D --> L[RLHF Research<br/>🎯]
-    D --> M[Social Simulation<br/>🌐]
-    D --> N[Fairness Algorithms<br/>⚖️]
-    
-    E --> O[Microservices<br/>🔗]
-    E --> P[Observability<br/>👁️]
-    E --> Q[Docker/K8s<br/>📦]
-    
-    F --> R[society-as-network<br/>🕸️]
-    I --> S[llm-embedded<br/>💻]
-    L --> T[rlhf-lab<br/>🔬]
-    H --> U[Healthcare QA<br/>❓]
-    
-    style A fill:#ff6b6b,stroke:#fff,stroke-width:3px
-    style B fill:#4ecdc4,stroke:#fff,stroke-width:2px
-    style C fill:#45b7d1,stroke:#fff,stroke-width:2px
-    style D fill:#96ceb4,stroke:#fff,stroke-width:2px
-    style E fill:#feca57,stroke:#fff,stroke-width:2px
-```
-
-</div>
 
 ### 🔗 Knowledge Connections & Insights
 
