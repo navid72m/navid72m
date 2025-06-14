@@ -207,7 +207,7 @@ class NavidApproach:
 - 🌍 **Multi-agent LLMs** for emergent behavior analysis
 - 🎲 **Game theory + RL** for fairness and alignment 
 - 🧩 **LLM hallucination detection** with robust evaluation metrics
-- 🧠 **AI + Philosophy + Decision Theory** (potential PhD focus)
+- 🧠 **AI + Philosophy + Decision Theory** 
 
 ---
 
