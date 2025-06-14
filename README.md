@@ -23,7 +23,7 @@
 
 <div align="center">
 
-**📄 [Consciousness, AI, and Reality: A Formal Perspective on Synthetic Minds and the Limits of Representation](https://navid72m.github.io/consciousness-paper)**
+**📄 [Consciousness, AI, and Reality: A Formal Perspective on Synthetic Minds and the Limits of Representation]**
 
 *Exploring the intersection of philosophy of mind, epistemology, and the mathematics of consciousness*
 
