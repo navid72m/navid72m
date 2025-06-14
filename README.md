@@ -48,7 +48,45 @@
 
 ---
 
-### 💡 Current Focus: Healthcare AI That Actually Works
+### 🚀 Featured Projects: Where Theory Meets Impact
+
+<table>
+<tr>
+<td width="50%">
+
+**🧠 [society-as-a-network](https://github.com/navid72m/society-as-a-network)**
+*Modeling societal systems as neural networks*
+- Deep Learning + Reinforcement Learning for social simulation
+- Focus: Balancing fairness, efficiency, and meritocracy
+- Keywords: Policy Optimization, Ethics in AI
+- 📄 Paper draft available on request
+
+**⚡ [llm-embedded](https://github.com/navid72m/llm-embedded)**
+*LLMs on edge hardware (Jetson Orin Nano)*
+- Model quantization, compression & distillation
+- Hardware-aware design for real-world deployment
+- Focus: Efficient inference, low-latency systems
+
+</td>
+<td width="50%">
+
+**📊 [time-series-lab](https://github.com/navid72m/time-series-lab)**
+*End-to-end time series analysis framework*
+- Statistical + Deep Learning approaches
+- Tools: Prophet, ARIMA, LSTM
+- Production-ready visualization pipelines
+
+**🎯 [rlhf-lab](https://github.com/navid72m/rlhf-lab)**
+*Human feedback → Better AI behavior*
+- Reinforcement Learning from Human Feedback
+- Policy optimization experiments
+- Reward model training & evaluation
+
+</td>
+</tr>
+</table>
+
+### 💡 Current Research: Healthcare AI That Actually Works
 
 ```python
 class HealthcareAI:
@@ -56,12 +94,12 @@ class HealthcareAI:
         self.expertise = {
             "nlp_models": ["BERT", "GPT", "RAG"],
             "healthcare_focus": "regulated_text_processing",
-            "thesis_topic": "QA_search_pipelines_for_healthcare",
-            "approach": "academic_rigor + industry_pragmatism"
+            "thesis_topic": "QA_search_pipelines_for_healthcare", 
+            "unique_angle": "compliance + interpretability + usability"
         }
     
-    def solve_real_problems(self):
-        return "Building AI that doctors actually trust and use"
+    def my_approach(self):
+        return "Building AI systems that doctors actually trust and use"
 ```
 
 ### 🛠️ Tech Stack & Tools
@@ -79,37 +117,108 @@ class HealthcareAI:
 
 ---
 
-### 🔥 What I'm Passionate About
+### 🔥 What Makes These Projects Special
 
 <details>
-<summary><b>🏥 Responsible AI in Healthcare</b></summary>
+<summary><b>🧠 The "Society as Neural Network" Breakthrough</b></summary>
 <br>
-Building AI systems that healthcare professionals actually trust and use. My thesis focuses on developing QA and search pipelines using BERT and GPT for regulated healthcare texts - because AI in healthcare isn't just about accuracy, it's about compliance, interpretability, and real-world usability.
+This isn't just another AI project - it's a paradigm shift. By modeling entire societies as neural networks, I'm exploring how we can optimize for fairness, efficiency, and meritocracy simultaneously. The intersection of social simulation, policy optimization, and AI ethics positions this work at the forefront of responsible AI development.
 </details>
 
 <details>
-<summary><b>🔧 System Observability & Architecture</b></summary>
+<summary><b>⚡ Edge AI: Making LLMs Accessible Everywhere</b></summary>
 <br>
-Every role I've had involved improving logging, monitoring, and system architecture. I believe in building systems that don't just work, but systems that tell you WHY they work (or don't). Observability isn't just monitoring - it's understanding.
+While everyone talks about massive cloud models, I'm solving the real problem: getting powerful AI to run locally on edge devices. My work on model quantization and compression for Jetson Orin Nano makes advanced NLP accessible in healthcare settings, remote locations, and privacy-sensitive environments.
 </details>
 
 <details>
-<summary><b>🌉 Cross-Cultural Tech Innovation</b></summary>
+<summary><b>🏥 Healthcare AI with Regulatory Compliance</b></summary>
 <br>
-Having worked across Iran and Germany, I've seen how different cultures approach technology problems. This gives me unique insights into building globally accessible tech solutions and international team collaboration.
+My thesis combines BERT/GPT with strict healthcare regulations - a combination that's desperately needed but rarely done right. I'm building QA and search systems that don't just work technically, but actually pass regulatory scrutiny and earn doctor trust.
+</details>
+
+<details>
+<summary><b>🔧 The Observability Pattern Across All Projects</b></summary>
+<br>
+Every project includes robust monitoring and logging - not as an afterthought, but as a core design principle. Whether it's tracking model performance, system health, or social simulation metrics, observability is how I ensure AI systems are trustworthy and debuggable.
 </details>
 
 ---
 
-### 📊 My Contribution Philosophy
+### 🧠 The "Responsible AI Philosopher" Pattern
 
-```diff
-+ 🎯 Focus on solving real problems, not just cool tech
-+ 🔍 Always improve system observability and monitoring  
-+ 🏗️ Build for scale, maintain for humans
-+ 📚 Share knowledge through clear documentation
-+ 🤝 Bridge technical depth with practical applications
+From your projects and research directions, a fascinating intellectual profile emerges:
+
+<table>
+<tr>
+<td width="50%">
+
+**🎭 The Philosopher-Engineer**
+- Society as neural networks → Ethics + Systems thinking
+- RLHF research → Human-AI alignment philosophy  
+- Healthcare AI → Trust and compliance frameworks
+- Game theory + RL → Fairness in algorithmic systems
+
+**🔬 The Research-Practitioner Bridge**
+- Academic thesis + Industry experience
+- Theoretical frameworks + Production systems
+- Paper drafts + Working code
+- PhD preparation + Real-world deployment
+
+</td>
+<td width="50%">
+
+**🌍 Cross-Domain Pattern Recognition** 
+- Gaming → Healthcare: Engagement + Reliability
+- Iran → Germany: Cultural adaptation strategies
+- Backend → AI: Systems thinking + Intelligence
+- Research → Industry: Theory + Practical impact
+
+**📝 Knowledge Synthesis & Communication**
+- Technical concepts → Accessible explanations
+- Complex systems → Simple frameworks  
+- Multiple languages → Multiple perspectives
+- Academic rigor + Industry pragmatism
+
+</td>
+</tr>
+</table>
+
+### 💭 Your Unique Intellectual Approach
+
+```python
+class NavidApproach:
+    def __init__(self):
+        self.core_question = "How can we build AI that actually serves humanity?"
+        self.methodology = {
+            "technical_depth": "Low-level (C) to high-level (Python) mastery",
+            "domain_expertise": "Healthcare compliance + Gaming engagement", 
+            "philosophical_lens": "Ethics, fairness, human-AI alignment",
+            "cultural_bridge": "East-West perspectives on technology",
+            "communication_style": "Complex ideas → Simple explanations"
+        }
+    
+    def solve_problems(self):
+        return "Technical excellence + Ethical frameworks + Human understanding"
 ```
+
+### 🚀 Current Research Directions
+
+- 🌍 **Multi-agent LLMs** for emergent behavior analysis
+- 🎲 **Game theory + RL** for fairness and alignment 
+- 🧩 **LLM hallucination detection** with robust evaluation metrics
+- 🧠 **AI + Philosophy + Decision Theory** (potential PhD focus)
+
+---
+
+### 💻 Recent Project Highlights
+
+| Project | Impact | Tech Stack |
+|---------|--------|------------|
+| 🧠 Society-as-Network | Social simulation breakthrough | Deep RL + Policy Optimization |
+| ⚡ LLM-Embedded | Edge AI democratization | PyTorch + Model Compression |
+| 📊 Time-Series-Lab | Production-ready forecasting | Prophet + LSTM + ARIMA |
+| 🎯 RLHF-Lab | Better human-AI alignment | RLHF + Reward Modeling |
 
 ### 🌍 Let's Connect!
 
@@ -122,7 +231,7 @@ Having worked across Iran and Germany, I've seen how different cultures approach
 ---
 
 <p align="center">
-<i>"The best AI systems are the ones that humans actually want to use."</i>
+<i>"The most impactful AI systems are those that understand both the technical complexity and the human context they serve."</i>
 </p>
 
 <p align="center">
