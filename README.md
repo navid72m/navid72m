@@ -1,80 +1,39 @@
-# 🏗️ Systems Architect | Advanced AI Engineer | Designing Trustworthy & Adaptive Systems
+# Navid Mirnouri — AI Systems Engineer
 
-<p align="right">
-<img src="https://komarev.com/ghpvc/?username=navid72m&style=flat-square&color=blue" alt="Profile views" />
-<img src="https://img.shields.io/github/followers/navid72m?style=flat-square&color=green" alt="GitHub followers" />
-</p>
+**Agent reliability & security · Retrieval systems · Low-level ML performance**
 
----
-
-### 🧠 Bridging Theory and Production: The Value Proposition
-
-My expertise lies at the intersection of deep theoretical inquiry (Philosophy of Mind, Cognitive Science) and robust, scalable engineering practice. I specialize in transitioning high-level conceptual goals—such as building truly adaptive or self-improving AI—into practical, production-grade systems. I design AI pipelines that are not only intelligent but are also secure, efficient, and compliant, particularly within regulated sectors like healthcare.
-
-> **🎯 I build AI that doesn't just compute, but adapts and reasons. My focus is on the robust *system* that enables the intelligence.**
+I build the unglamorous layer that makes AI systems trustworthy: runtime security auditing for agent tooling, vector search engines written from scratch in C, and agentic frameworks with deterministic backstops instead of prompt hope. Background in distributed backends at scale (1M+ MAU in Go, high-throughput IoT pipelines) and an M.Sc. in Informatics from TUM.
 
 ---
 
-### ⚙️ CORE COMPETENCIES: The Engineering Stack
+## Featured work
 
-This is the technical engine room of my profile. I have organized skills by functional area to make it immediately clear to a recruiter what I can *do*.
+| Project | What it is | Links |
+|---|---|---|
+| **mcp-behave** | Runtime behavioral security auditor for MCP servers. Traces actual syscalls via strace to catch undeclared file/network/process activity, permission-scope violations, and post-install "rug-pull" manifest changes (hash pinning). CI-ready `--json` / `--fail-on` modes. | [repo](https://github.com/navid72m/mcp-behave) · [PyPI](https://pypi.org/project/mcp-behave/) |
+| **vecdb** | A from-scratch C11 vector database: HNSW + Vamana (DiskANN-style) graph indexes, SIMD distance kernels (AVX-512 / NEON), 4-/8-bit TurboQuant compression, filtered search, Python bindings. Benchmarked against FAISS on SIFT1M/GIST1M. | [repo](https://github.com/navid72m/vectorDatabase) · [PyPI](https://pypi.org/project/vecdbc/) |
+| **AgentForge** | Local-first, low-code framework that generates LangGraph agentic systems from natural language — with deterministic validation backstops, because "the prompt says don't" is not an architecture. | [repo](https://github.com/navid72m/AgentForge) |
+| **AdaptiveRAG** | Self-configuring agentic RAG framework on LangGraph/Ollama: inspects your corpus and query patterns, then picks its own retrieval strategy. | [repo](https://github.com/navid72m/adaptiveRAG) · [PyPI](https://pypi.org/project/adaptiverag/) |
+| **pdf** | Document intelligence platform combining semantic embedding, intelligent retrieval, and generation for end-to-end document Q&A. | [repo](https://github.com/navid72m/pdf) |
 
-#### 🛠️ Systems & Backend Architecture (Primary Focus)
-*   **Languages:** Go (GoLang), Python, C (for optimized computation)
-*   **DevOps:** Docker, Kubernetes, CI/CD Pipelines, Distributed Systems Design
-*   **Design:** Microservices, RESTful API Design, System Observability, High-Throughput Data Flow
-
-#### 🤖 AI/ML Engineering & Optimization
-*   **Frameworks:** PyTorch, Hugging Face Transformers, Scikit-learn
-*   **Modeling:** LLM Fine-Tuning, RAG Implementation, NLP, Reinforcement Learning (RLHF)
-*   **Efficiency:** Model Quantization, Pruning, Low-Latency Inference, Edge Computing Optimization
-
-#### 🛡️ Compliance & Data Governance
-*   **Domain:** Data Privacy (HIPAA, GDPR principles), Model Interpretability (Explainable AI - XAI)
-*   **Practice:** Auditing, Secure Deployment, Ethical AI Principles, Trustworthiness Engineering
+**Also:** an ARM NEON ternary GEMM kernel for BitNet-style 1.58-bit inference sustaining 40+ GOP/s on Apple Silicon (with roofline analysis), and a bilingual (English/Persian) production voice agent on Deepgram + Cloudflare Workers.
 
 ---
 
-### 🚀 SELECTED ENGINEERING PROJECTS: Proof of Implementation
+## How I got here
 
-These projects demonstrate my ability to solve complex, real-world technical challenges using advanced AI methodologies.
+Systems engineering first, AI second — in the order that makes AI systems actually work. Scaled Go backends to 1M+ monthly active users at Quiz of Kings, built serverless IoT platforms managing 100k+ devices at MDOP, and engineered ML-supporting data pipelines with 99.9% reliability at Node-h (Munich). That foundation is why my AI projects ship with write-ahead logs, benchmarks, and CI flags rather than just demos.
 
-#### ⚡ [llm-embedded] - Secure, Low-Latency LLM Deployment on Edge Devices
-*A case study in performance engineering and data privacy.*
+## The thread underneath
 
-> **Description:** Developed a secure, localized NLP inference engine designed to run on constrained edge hardware (e.g., Jetson Orin). This project focuses on deploying powerful LLMs without requiring constant cloud connectivity, solving critical data privacy and latency issues inherent in large models.
-* **Key Technical Contributions:** Implementing model quantization and pruning to reduce memory footprint. Designing a robust API layer for streamlined input/output on limited hardware.
-* **Skills Demonstrated:** Edge Computing, Model Compression, Low-Latency Systems, PyTorch.
-
-#### 🎯 [rlhf-lab] - Designing Dynamic Systems via AI Alignment
-*An investigation into creating self-correcting and aligned AI agents.*
-
-> **Description:** Designed and tested novel reinforcement learning pipelines centered around Human Feedback (RLHF). The goal was to move beyond simple predictive tasks and build systems that iteratively align themselves with complex, evolving human values and functional requirements.
-* **Key Technical Contributions:** Orchestrating complex training loops. Developing feedback mechanisms to guide model optimization. Focusing on system robustness and long-term behavioral stability.
-* **Skills Demonstrated:** AI Alignment, Reinforcement Learning, Iterative Optimization, Fine-Tuning.
-
-#### 🌐 [society-as-a-network] - Complex System Modeling & Predictive Analytics
-*A large-scale simulation of societal or ecological dynamics.*
-
-> **Description:** Constructed a simulation platform to model how complex, interconnected systems (like social networks or biological ecosystems) evolve based on localized feedback loops. This required designing scalable data structures and high-performance backend processing.
-* **Key Technical Contributions:** Implementing a distributed simulation architecture (e.g., using Go concurrency). Developing predictive models to forecast system state changes based on initial parameters.
-* **Skills Demonstrated:** Distributed Systems, Data Modeling, High-Performance Computing, Simulation Design.
+I care about the nature of intelligence, not just its applications. [Noesis](https://github.com/navid72m/Noesis) is a local-first research framework for studying memory, self-modeling, and phenomenological behavior in LLMs; [sim-society](https://github.com/navid72m/sim-society) simulates societies of LLM agents to study deliberation, fairness, and value alignment. The engineering discipline and the philosophy of mind interest are the same project viewed from two sides: if you want to understand a mind, try to build the architecture that could support one.
 
 ---
 
-### 📜 MY TECHNICAL PHILOSOPHY: The Driving Force
+## Contact
 
-My pursuit of technical excellence is driven by a fundamental interest in the nature of intelligence itself. I view the complexity of consciousness not as an abstract puzzle, but as the ultimate system design challenge.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-navid--mirnouri-0077B5?style=flat-square&logo=linkedin)](https://linkedin.com/in/navid-mirnouri)
+[![Email](https://img.shields.io/badge/Email-navid72m%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:navid72m@gmail.com)
+[![PyPI](https://img.shields.io/badge/PyPI-navid72m-3775A9?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/user/navid72m/)
 
-*   **My View:** Can we design the foundational architecture of intelligence?
-*   **My Approach:** By systematically addressing the constraints of performance, privacy, and alignment, I strive to build systems that exhibit the emergent properties we associate with advanced cognition.
-
----
-
-### ✉️ CONNECT & COLLABORATE
-
-I am currently seeking roles where I can lead the technical design and deployment of cutting-edge, high-integrity AI systems.
-
-<a href="https://linkedin.com/in/navid-mirnouri"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin" alt="LinkedIn" /></a>
-<a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Email-YOUR%20EMAIL-D14836?style=for-the-badge" alt="Email" /></a>
-<a href="https://github.com/navid72m"><img src="https://img.shields.io/badge/GitHub-Code-18A0FB?style=for-the-badge&logo=github" alt="GitHub" /></a>
+Open to roles in agent infrastructure, AI reliability/security, and retrieval systems.
