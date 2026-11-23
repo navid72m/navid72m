@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="navid-coding-banner.png" alt="Navid Mirnouri — AI Systems Engineer" width="100%" />
+  <img src="Gemini_Generated_Image_wuc4tjwuc4tjwuc4.jpeg" alt="Navid Mirnouri — AI Systems Engineer" width="100%" />
 </p>
 
 <h1 align="center">Navid Mirnouri</h1>
